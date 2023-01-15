@@ -116,3 +116,7 @@ if __name__ == '__main__':
     print("\nIn order traversal:", name_tree.in_order_traversal())
     print("Pre order traversal:", name_tree.pre_order_traversal())
     print("Post order traversal:", name_tree.post_order_traversal())
+
+    print("\nIs letter K in the list?", name_tree.search("K"))
+    print("Is letter S in the list?", name_tree.search("S"))
+
