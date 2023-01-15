@@ -70,7 +70,7 @@ class BinarySearchTreeNode:
         return elements
 
     def find_max(self):
-        if self.left is None:
+        if self.right is None:
             return self.data
         return self.right.find_max()
 
@@ -94,9 +94,9 @@ class BinarySearchTreeNode:
             elif self.right is None:
                 return self.left
 
-            minimum_val = self.right.minimum()
-            self.data = minimum_val
-            self.right = self.right.delete(minimum_val)
+            min_val = self.right.find_min()
+            self.data = min_val
+            self.right = self.right.delete(min_val)
 
         return self
 
@@ -110,3 +110,5 @@ def build_tree(elements):
 if __name__ == '__main__':
     name = ["K", "Y", "L", "A", "C", "A", "M","I", "L", "L", "E", "A", ".", "L","I", "W", "A", "N", "A", "G"]
     name_tree = build_tree(name)
+    print("\nMinimum Value:", name_tree.find_min())
+    print("Maximum Value:", name_tree.find_max())
