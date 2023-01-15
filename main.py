@@ -120,3 +120,10 @@ if __name__ == '__main__':
     print("\nIs letter K in the list?", name_tree.search("K"))
     print("Is letter S in the list?", name_tree.search("S"))
 
+    name_tree.delete("A")
+    print("After Deleteing A", name_tree.in_order_traversal())
+    name_tree.delete("L")
+    print("After Deleteing L", name_tree.in_order_traversal())
+
+    name_tree.delete("I")
+    print("After Deleteing I", name_tree.in_order_traversal())
