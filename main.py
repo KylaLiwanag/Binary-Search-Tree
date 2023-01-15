@@ -112,3 +112,7 @@ if __name__ == '__main__':
     name_tree = build_tree(name)
     print("\nMinimum Value:", name_tree.find_min())
     print("Maximum Value:", name_tree.find_max())
+
+    print("\nIn order traversal:", name_tree.in_order_traversal())
+    print("Pre order traversal:", name_tree.pre_order_traversal())
+    print("Post order traversal:", name_tree.post_order_traversal())
